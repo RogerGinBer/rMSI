@@ -9,17 +9,6 @@ It provides an optimized data model to allow loading large MS imaging datasets i
 ##### Rtools (Windows only)
 *rMSI* uses some compression methods that are not available by default in Windows operating system. To be able to run *rMSI*, Windows users must install Rtools available at: <https://cran.r-project.org/bin/windows/Rtools/> just download the *.exe installer and go trough the installation wizard.
 
-##### RGtk2
-*rMSI* provides a quite complex data model together with a graphical user interface (GUI), consequently rMSI depends on many other R packages that must be also installed. RGtk2 is one of these packages and is known to be problematic to install in some cases (specially on non-Linux systems). So, it is highly recommended installing and testing it before going through the process of installing *rMSI*. 
-First install RGtk2 using R console:
-```R
-> install.packages("RGtk2")
-```
-Then test that it is working by loading the package:
-```R
-> library(RGtk2)
-```
-If RGtk2 loads properly then continue with the *rMSI* installation process. Otherwise, please check out the RGtk2 website to solve issues related with Gtk installation: <http://www.ggobi.org/rgtk2/>
 
 ##### rMSI
 The simplest way to install rMSI and keep it updated is using devtools package. Install devtools from CRAN into your R session:
